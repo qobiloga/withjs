@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.big{
+    border: 5px solid rgb(6, 137, 32);
+    min-height: 100dvh;
+    display: flex;
+}
+
+.menu{
+    background-color: rgb(231, 248, 243);
+    flex-shrink: 0;
+    list-style: none;
+    padding: 30px 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.3s all linear;
+    display: none;
+}
+
+.showmenu{
+    width: 250px;
+    display: block;
+}
+
+.item{
+    margin-bottom: 6px;
+    border: 2px solid rgb(198, 255, 255);
+    width: 220px;
+    border-radius: 5px;
+    padding: 5px 7px;
+    background-color: aquamarine;
+}
+
+
+
+.link{
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+.right{
+    border: 10px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.top{
+    background-color: gold;
+    padding: 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* btn effect STSRT */
+.btn{
+    width: 40px;
+    height: 35px;
+    background-color: transparent;
+    position: relative;
+    border: none;
+
+}
+.line{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    left: 0;
+    transition: 0.2s all linear;
+}
+
+.line1{
+    top: 0;
+}
+
+.line2{
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.line3{
+    bottom: 0;
+}
+
+.btn.active .line2{
+    opacity: 0;
+}
+
+.btn.active .line1{
+    top: 50%;
+    translate: 0 -50%;
+    rotate: 45deg;
+}
+
+.btn.active .line3{
+    bottom: 50%;
+    translate: 0 50%;
+    rotate: -45deg;
+}
+
+/* btn effect STOP */
+.content{
+    background-color: white;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+
+.middle{
+    display: block;
+    background-color: bisque;
+    font-size: 25px;
+}
+
+.silver{
+    padding: 20px 30px;
+    margin: 30px 40px;
+    background-color: silver;
+}
+
+.theme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.matn{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.tugma{
+    background-color: rgb(80, 117, 24);
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.icon{
+    font-size: 30px;
+    color: white;
+}
+
+.warning{
+    background-color: rgb(226, 86, 86);
+}
+
+
+.nn{
+    border: 2px solid red;
+    position: relative;
+}
+
+.app{
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.apps{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 390px;
+    overflow: auto;
+    box-shadow: 0 0 30px ;
+    border-radius: 10px;
+}
+
+.free{
+    width: 25%;
+}
+
+.free:hover{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+.fre{
+    width: 100%;
+}
+
+.la{
+    position: relative;
+}
+
+.lan{
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.lang{
+    position: absolute;
+}
+
+.langu{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 76, 125);
+    width: 100px;
+    padding: 10px 15px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.langu:hover{
+    background-color: rgb(140, 140, 237);
+
+}
+
+.langua{
+    font-size: 50px;
+}
+
+.glo{
+    color: rgb(231, 50, 222);
+}
+
+.h1{
+    text-align: center;
+
+}
+
+.switch{
+    text-decoration: none;
+    font-size: 22px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
