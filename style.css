@@ -201,6 +201,8 @@ img {
 
 
 .apps{
+    top: 120%;
+    right: 0;
     position: absolute;
     background-color: white;
     width: 300px;
@@ -246,6 +248,7 @@ img {
 }
 
 .lang{
+    top: 110%;
     position: absolute;
 }
 
